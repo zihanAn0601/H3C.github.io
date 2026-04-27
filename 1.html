@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页 - 求职新华三</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 头部 */
+        header {
+            background: linear-gradient(135deg, #0052cc, #00b4ff);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        /* 卡片通用样式 */
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .card h2 {
+            color: #0052cc;
+            margin-bottom: 20px;
+            border-left: 4px solid #0052cc;
+            padding-left: 10px;
+        }
+
+        /* 个人信息 */
+        .info-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .info-list li {
+            padding: 10px;
+            background: #f8fafc;
+            border-radius: 5px;
+        }
+
+        /* 技能 */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: #e6f7ff;
+            color: #0052cc;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.95em;
+        }
+
+        /* 项目经历 */
+        .project-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .project-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .project-item h3 {
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .project-item p {
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        /* 对新华三的了解 */
+        .about-h3c p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <header>
+            <h1>安子涵</h1>
+            <p>通信工程专业 | 求职：技术支持工师（实习岗）</p >
+        </header>
+
+        <!-- 个人信息 -->
+        <section class="card">
+            <h2>个人信息</h2>
+            <ul class="info-list">
+                <li>出生年月：2005年6月</li>
+                <li>院校：大连工业大学</li>
+                <li>专业：通信工程（2023-2027）</li>
+                <li>电话：15804295575</li>
+                <li>邮箱：an2542597070@163.com</li>
+                <li>英语：大学英语四级（CET-4）</li>
+            </ul>
+        </section>
+
+        <!-- 专业技能 -->
+        <section class="card">
+            <h2>专业技能</h2>
+            <div class="skills">
+                <span class="skill-tag">通信原理</span>
+                <span class="skill-tag">数字信号处理</span>
+                <span class="skill-tag">MATLAB仿真</span>
+                <span class="skill-tag">C语言</span>
+                <span class="skill-tag">单片机原理</span>
+                <span class="skill-tag">计算机网络</span>
+                <span class="skill-tag">CAD工程绘图</span>
+                <span class="skill-tag">Linux基础</span>
+            </div>
+        </section>
+
+        <!-- 项目经历 -->
+        <section class="card">
+            <h2>项目经历</h2>
+            <div class="project-item">
+                <h3>通信基站设计课程项目</h3>
+                <p>主导基站选址、路线规划及成本核算，使用CAD绘制工程图纸，项目获评优秀。</p >
+            </div>
+            <div class="project-item">
+                <h3>基于MATLAB的数字信号处理仿真</h3>
+                <p>实现语音信号滤波与频谱分析，对比不同滤波器的降噪效果，课程成绩优异。</p >
+            </div>
+        </section>
+
+        <!-- 对新华三的了解 -->
+        <section class="card about-h3c">
+            <h2>为什么选择新华三</h2>
+            <p>新华三作为国内ICT领域的领军企业，在企业网络、服务器、云计算和通信技术等领域拥有深厚的技术积累和市场影响力，是我一直向往的平台。</p >
+            <p>通信工程专业的学习，让我对TCP/IP协议、通信原理、信号处理等核心知识有了扎实的掌握。我希望能加入新华三，在网络设备、通信技术相关岗位上，将所学知识应用到实际项目中，同时在企业级技术平台上快速成长，为新华三的政企数字化建设贡献自己的力量。</p >
+        </section>
+    </div>
+
+    <footer>
+        © 2026 安子涵 | 求职新华三
+    </footer>
+</body>
+</html>
